@@ -1,0 +1,10 @@
+{
+  "$id": "pluginNumberOne",
+  "$schema": "https://yext.schema.com",
+  "globals": {
+    "API_KEY": "123456789",
+    "API_KEY_NUM": 123456789
+  },
+  "concurrency": 2,
+  "memoryLimitMB": 3
+}
