@@ -49,5 +49,8 @@
 			  "name": "Max"	
 			}
 		}
-	  ]
+	  ],
+	  "siteAttributes": {
+		  "description": "This is a site attribute"
+	  }
 }

@@ -18,6 +18,12 @@
                 "root": "pages",
                 "pattern": "*.hbs"
             } 
+        ],
+        "soyTemplates": [
+            {
+                "root": "templates",
+                "pattern": "*.soy"
+            }
         ]
     },
     "base_image_tag": "node-12.18",

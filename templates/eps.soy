@@ -1,0 +1,43 @@
+---
+{
+    "stream": {
+        "$id": "products",
+        "source": "knowledgeGraph",
+        "destination": "pages",
+      "fields": [
+        "id",
+        "uid",
+        "richTextDescription",
+        "name",
+        "slug",
+        "price",
+        "color",
+        "brand",
+        "photoGallery"
+      ],
+      "filter": {
+        "entityTypes": [
+          "product"
+        ]
+      }
+    },
+    "urlFormat": "{{slug}}"
+}
+---
+{namespace eps}
+
+/**
+ * @param profile
+ * @param siteAttributes
+ */
+{template .soy}
+    <h1>Soy Template</h1>
+    <h1>{$profile.id}</h1>
+
+    {if $profile.richTextDescription}
+        <p>{$profile.richTextDescription}</p>
+    {/if}
+    {if $siteAttributes}
+        <p>site attributes: {$siteAttributes}</p>
+    {/if}
+{/template}
