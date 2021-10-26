@@ -3,5 +3,5 @@
     "pluginId": "updateEntity",
     "functionName": "onEntityChanged",
     "event": "ON_URL_CHANGE"
-  },
+  }
 ]
