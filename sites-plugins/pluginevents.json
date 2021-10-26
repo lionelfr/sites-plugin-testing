@@ -1,23 +1,7 @@
 [
   {
-    "pluginId": "pluginNumberOne",
-    "functionName": "helloWorld",
+    "pluginId": "updateEntity",
+    "functionName": "onEntityChanged",
     "event": "ON_URL_CHANGE"
   },
-  {
-    "pluginId": "pluginNumberOne",
-    "functionName": "changeUrl",
-    "event": "ON_URL_CHANGE"
-  },
-  {
-    "pluginId": "pluginNumberTwo",
-    "functionName": "helloWorld",
-    "event": "ON_URL_CHANGE"
-  },
-  {
-    "pluginId": "pluginNumberTwo",
-    "functionName": "changeUrl",
-    "event": "ON_URL_CHANGE"
-  }
 ]
-
