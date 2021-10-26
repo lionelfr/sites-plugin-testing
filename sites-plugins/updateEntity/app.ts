@@ -3,7 +3,7 @@ import {
   EntityUpdate,
   getEntity,
   updateEntity,
-} from "./yext";
+} from "./yext.ts";
 
 export async function handleEntityUpdate(data: EntityUpdate) {
   console.log(`     start: ${new Date().toISOString()}`);
