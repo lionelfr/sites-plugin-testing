@@ -40,8 +40,9 @@ export type ProfileValue =
   | { [k: string]: ProfileValue };
 
 export interface EntityUpdate {
-  updatedUrl: string;
-  id: string;
+  path: string;
+  entityId: string;
+  locale: string;
 }
 
 export interface ApiResponse<T> {
@@ -68,20 +69,6 @@ function buildUrl(path: string, params?: Record<string, string>) {
     result.searchParams.append(k, params[k]);
   }
   return result.toString();
-}
-
-export async function getEntity<T extends EntityProfile>(
-  id: string,
-): Promise<T | null> {
-  const url = buildUrl(`entities/${id}`);
-  const response = await fetch(url);
-  if (response.status === 404) {
-    return null;
-  } else if (response.status < 200 || response.status >= 300) {
-    throw response;
-  }
-  const body = await response.json() as ApiResponse<T>;
-  return body.response;
 }
 
 export async function updateEntity<T extends EntityProfile>(
