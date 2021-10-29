@@ -82,7 +82,7 @@ export async function updateEntity<T extends EntityProfile>(
   });
   const response = await fetch(req);
   if (response.status < 200 || response.status >= 300) {
-    throw response.status;
+    throw response.status
   }
   const responseBody = await response.json() as ApiResponse<T>;
   return responseBody.response;

@@ -3,6 +3,6 @@
   "$schema": "https://schema.yext.com/config/platform/plugin/v1",
   "globals": {
     "YEXT_API_KEY": "cb9b8036c73070feb0df34a6f5fa7c4e",
-    "FIELD_KEY": "c_url"
+    "FIELD_KEY": "additionalHoursText"
   }
 }
