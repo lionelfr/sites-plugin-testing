@@ -1,0 +1,37 @@
+{
+    "features": [
+        {
+            "name": "EPS",
+            "stream-id": "locations-testing",
+            "entityPageSet": {
+                "htmlTemplate": "eps.soy",
+                "urlTemplate": "eps.url"
+            },
+            "templateType": "SOY"
+        }
+    ],
+    "streams": [
+        {
+            "$id": "location-hours-testing",
+            "source": "knowledgeGraph",
+            "destination": "pages",
+            "fields": [
+                "id",
+                "uid",
+                "name",
+                "hours",
+                "description",
+                "meta"
+            ],
+            "filter": {
+                "entityTypes": [
+                "location"
+                ]
+            },
+            "localization": {
+                "locales": ["en"]
+            }
+        }
+    ],
+    "templateVersion": 8
+}

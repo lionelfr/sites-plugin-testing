@@ -1,0 +1,40 @@
+{namespace eps}
+
+/**
+ * @param profile
+ */
+{template .soy}
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>{$profile.name}</title>
+      <meta name="description" content={$profile.description}>
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
+  </head>
+
+  <div class="container mx-auto px-4">
+      <body>
+              <div class="grid grid-cols-2 divide-x gap-3 pl-10">
+                  <div class="col-span-1">
+                      <div class="container py-8 px-6 mx-auto">
+                          <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
+                              {$profile.name}
+                          </div>
+                          <p class="mt-8 mb-8 text-xl">{$profile.hours}</p>
+                      </div>
+                  </div>
+              </div>
+      </body> 
+  </div>
+  </html>
+{/template}
+
+/**
+ * @param profile
+ */
+{template .url}
+kg-soy-{$profile.id}.html
+{/template}
