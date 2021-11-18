@@ -2,7 +2,7 @@
     "features": [
         {
             "name": "EPS",
-            "stream-id": "locations-testing",
+            "streamId": "location-hours-testing",
             "entityPageSet": {
                 "htmlTemplate": "eps.soy",
                 "urlTemplate": "eps.url"
