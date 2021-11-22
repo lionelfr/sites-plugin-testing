@@ -21,7 +21,8 @@
                 "name",
                 "hours",
                 "description",
-                "meta"
+                "meta",
+                "timezone"
             ],
             "filter": {
                 "entityTypes": [
