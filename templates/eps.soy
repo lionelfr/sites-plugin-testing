@@ -11,7 +11,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>{$profile.name}</title>
-      <meta name="description" content={$profile.description}>
       <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
   </head>
 
@@ -24,6 +23,8 @@
                               {$profile.name}
                           </div>
                           <p class="mt-8 mb-8 text-xl">{$profile.hours}</p>
+                          {$profile.c_singleOptionCft}
+                          {$profile.c_tomsMultiOption1}
                       </div>
                   </div>
               </div>

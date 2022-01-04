@@ -20,13 +20,19 @@
                 "uid",
                 "name",
                 "hours",
-                "description",
+                "c_singleOptionCft",
+                "c_tomsMultiOption1",
                 "meta",
                 "timezone"
             ],
+            "transform": {
+                "expandOptionFields": [
+                  "c_singleOptionCft"
+                ]
+              },
             "filter": {
                 "entityTypes": [
-                "location"
+                    "location"
                 ]
             },
             "localization": {
