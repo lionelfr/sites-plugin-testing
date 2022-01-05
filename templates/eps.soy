@@ -23,8 +23,12 @@
                               {$profile.name}
                           </div>
                           <p class="mt-8 mb-8 text-xl">{$profile.hours}</p>
-                          {$profile.c_singleOptionCft}
-                          {$profile.c_tomsMultiOption1}
+                          {if $profile.c_singleOptionCft}
+                            {$profile.c_singleOptionCft}
+                          {/if}
+                          {if $profile.c_tomsMultiOption1}
+                            {$profile.c_tomsMultiOption1}
+                          {/if}
                       </div>
                   </div>
               </div>

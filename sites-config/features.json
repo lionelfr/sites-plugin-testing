@@ -28,6 +28,9 @@
             "transform": {
                 "expandOptionFields": [
                   "c_singleOptionCft"
+                ],
+                "replaceOptionValuesWithDisplayNames": [
+                    "c_tomsMultiOption1"
                 ]
               },
             "filter": {
