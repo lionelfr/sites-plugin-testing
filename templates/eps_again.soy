@@ -1,4 +1,4 @@
-{namespace eps}
+{namespace eps_again}
 
 /**
  * @param profile
@@ -25,9 +25,9 @@
                           {if $profile.c_singleOptionCft}
                             {$profile.c_singleOptionCft}
                           {/if}
-                          {if $profile.c_tomsMultiOption1}
-                            {$profile.c_tomsMultiOption1}
-                          {/if}
+                          {if $profile.description}
+                            {$profile.description}
+                          {\if}
                       </div>
                   </div>
               </div>
@@ -40,5 +40,5 @@
  * @param profile
  */
 {template .url}
-kg-soy-{$profile.id}.html
+kg-soy-again-{$profile.id}-{$profile.meta.locale}.html
 {/template}

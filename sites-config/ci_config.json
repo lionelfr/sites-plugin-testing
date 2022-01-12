@@ -20,6 +20,12 @@
                 "root": "templates",
                 "pattern": "*.soy"
             }
+        ],
+        "hbsTemplates": [
+            {
+                "root": "templates",
+                "pattern": "*.hbs"
+            }
         ]
     },
     "base_image_tag": "node-12.18",

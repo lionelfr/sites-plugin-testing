@@ -8,6 +8,24 @@
                 "urlTemplate": "eps.url"
             },
             "templateType": "SOY"
+        },
+        {
+            "name": "HBS",
+            "streamId": "location-hours-testing",
+            "entityPageSet": {
+                "htmlTemplate": "location.hbs",
+                "urlTemplate": "location_url.hbs"
+            },
+            "templateType": "HBS"
+        },
+        {
+            "name": "EPS2",
+            "streamId": "location-hours-testing-again",
+            "entityPageSet": {
+                "htmlTemplate": "eps_again.soy",
+                "urlTemplate": "eps_again.url"
+            },
+            "templateType": "SOY"
         }
     ],
     "streams": [
@@ -40,6 +58,33 @@
             },
             "localization": {
                 "locales": ["en"]
+            }
+        },
+        {
+            "$id": "location-hours-testing-again",
+            "source": "knowledgeGraph",
+            "destination": "pages",
+            "fields": [
+                "id",
+                "uid",
+                "name",
+                "description",
+                "c_singleOptionCft",
+                "meta",
+                "timezone"
+            ],
+            "transform": {
+                "expandOptionFields": [
+                  "c_singleOptionCft"
+                ]
+              },
+            "filter": {
+                "entityTypes": [
+                    "location"
+                ]
+            },
+            "localization": {
+                "locales": ["en", "es"]
             }
         }
     ],
