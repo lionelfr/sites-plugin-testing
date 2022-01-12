@@ -13,18 +13,16 @@
             { 
                 "root": "pages",
                 "pattern": "*.hbs"
-            } 
+            },
+            {
+                "root": "templates",
+                "pattern": "*.hbs"
+            }
         ],
         "soyTemplates": [
             {
                 "root": "templates",
                 "pattern": "*.soy"
-            }
-        ],
-        "hbsTemplates": [
-            {
-                "root": "templates",
-                "pattern": "*.hbs"
             }
         ]
     },
