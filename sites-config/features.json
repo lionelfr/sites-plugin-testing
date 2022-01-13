@@ -7,7 +7,13 @@
                 "htmlTemplate": "eps.soy",
                 "urlTemplate": "eps.url"
             },
-            "templateType": "SOY"
+            "templateType": "SOY",
+            "extraData": {
+                "a": [1, 2, 3],
+                "b": {
+                    "c": "d"
+                }
+            }
         },
         {
             "name": "HBS",
