@@ -92,9 +92,10 @@
                 ]
             },
             "localization": {
-                "locales": ["en", "es"]
+                "locales": ["es"]
             }
         }
     ],
-    "templateVersion": 8
+    "templateVersion": 8,
+    "locales": ["en", "es"]
 }
