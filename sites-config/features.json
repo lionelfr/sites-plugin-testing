@@ -32,14 +32,6 @@
                 "urlTemplate": "eps_again.url"
             },
             "templateType": "SOY"
-        },
-        {
-            "name": "Landing Page",
-            "templateType": "SOY",
-            "staticPage": {
-              "urlTemplate": "url.landing",
-              "htmlTemplate": "landing.layout"
-            }
         }
     ],
     "streams": [
