@@ -14,24 +14,6 @@
                     "c": "d"
                 }
             }
-        },
-        {
-            "name": "HBS",
-            "streamId": "location-hours-testing",
-            "entityPageSet": {
-                "htmlTemplate": "location.hbs",
-                "urlTemplate": "location_url.hbs"
-            },
-            "templateType": "HBS"
-        },
-        {
-            "name": "EPS2",
-            "streamId": "location-hours-testing-again",
-            "entityPageSet": {
-                "htmlTemplate": "eps_again.soy",
-                "urlTemplate": "eps_again.url"
-            },
-            "templateType": "SOY"
         }
     ],
     "streams": [
