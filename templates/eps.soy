@@ -2,6 +2,7 @@
 
 /**
  * @param profile
+ * @param extraData
  */
 {template .soy}
   <!DOCTYPE html>
@@ -27,6 +28,9 @@
                           {/if}
                           {if $profile.c_tomsMultiOption1}
                             {$profile.c_tomsMultiOption1}
+                          {/if}
+                          {if $extraData}
+                            {$extraData}
                           {/if}
                       </div>
                   </div>
