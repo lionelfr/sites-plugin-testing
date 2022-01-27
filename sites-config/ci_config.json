@@ -18,6 +18,22 @@
                 "root": "pages",
                 "pattern": "*.hbs"
             } 
+        ],
+        "features": "sites-config/features.json",
+        "plugins": [
+            {
+                "pluginName": "updateEntity",
+                "sourceFiles": [
+                  {
+                    "root": "sites-plugins/updateEntity",
+                    "pattern": "**/*.ts"
+                  },
+                  {
+                    "root": "sites-plugins/updateEntity",
+                    "pattern": "**/*.json"
+                  }
+                ]
+            }
         ]
     },
     "base_image_tag": "node-12.18",

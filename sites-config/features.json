@@ -1,0 +1,69 @@
+{
+    "features": [
+        {
+            "name": "ProductCategory",
+            "templateType": "HBS",
+            "entityPageSet": {
+                "htmlTemplate": "productCategory",
+                "urlTemplate": "productCategory_url"
+            },
+            "streamId": "product-categories"
+        },
+        {
+            "name": "Products",
+            "templateType": "HBS",
+            "entityPageSet": {
+                "htmlTemplate": "product",
+                "urlTemplate": "product_url"
+            },
+            "streamId": "products"
+        }
+    ],
+    "streams": [
+        {
+            "$id": "product-categories",
+            "source": "knowledgeGraph",
+            "destination": "pages",
+            "fields": [
+                "id",
+                "uid",
+                "name",
+                "slug",
+                "richTextDescription"
+            ],
+            "filter": {
+                "entityTypes": [
+                    "ce_productCategory"
+                ]
+            },
+            "localization": {
+                "locales": ["en"]
+            }
+        },
+        {
+            "$id": "products",
+            "source": "knowledgeGraph",
+            "destination": "pages",
+            "fields": [
+                "id",
+                "uid",
+                "richTextDescription",
+                "name",
+                "slug",
+                "price",
+                "color",
+                "brand",
+                "photoGallery"
+            ],
+            "filter": {
+                "entityTypes": [
+                    "product"
+                ]
+            },
+            "localization": {
+                "locales": ["en"]
+            }
+        }
+    ],
+    "templateVersion": 8
+}
