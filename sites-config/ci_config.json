@@ -32,7 +32,8 @@
                     "root": "sites-plugins/updateEntity",
                     "pattern": "**/*.json"
                   }
-                ]
+                ],
+                "event": "ON_URL_CHANGE"
             }
         ]
     },
