@@ -1,15 +1,6 @@
 {
     "features": [
         {
-            "name": "ProductCategory",
-            "templateType": "HBS",
-            "entityPageSet": {
-                "htmlTemplate": "productCategory",
-                "urlTemplate": "productCategory_url"
-            },
-            "streamId": "product-categories"
-        },
-        {
             "name": "Products",
             "templateType": "HBS",
             "entityPageSet": {
@@ -20,26 +11,6 @@
         }
     ],
     "streams": [
-        {
-            "$id": "product-categories",
-            "source": "knowledgeGraph",
-            "destination": "pages",
-            "fields": [
-                "id",
-                "uid",
-                "name",
-                "slug",
-                "richTextDescription"
-            ],
-            "filter": {
-                "entityTypes": [
-                    "ce_productCategory"
-                ]
-            },
-            "localization": {
-                "locales": ["en"]
-            }
-        },
         {
             "$id": "products",
             "source": "knowledgeGraph",
