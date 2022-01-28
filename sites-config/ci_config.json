@@ -34,6 +34,16 @@
                   }
                 ],
                 "event": "ON_URL_CHANGE"
+            },
+            {
+                "pluginName": "updateEntity2",
+                "sourceFiles": [
+                  {
+                    "root": "sites-plugins/updateEntity",
+                    "pattern": "**/*.js"
+                  }
+                ],
+                "event": "ON_URL_CHANGE"
             }
         ]
     },
