@@ -18,17 +18,12 @@
             "fields": [
                 "id",
                 "uid",
-                "richTextDescription",
-                "name",
-                "slug",
-                "price",
-                "color",
-                "brand",
-                "photoGallery"
+                "description",
+                "name"
             ],
             "filter": {
                 "entityTypes": [
-                    "product"
+                    "location"
                 ]
             },
             "localization": {
