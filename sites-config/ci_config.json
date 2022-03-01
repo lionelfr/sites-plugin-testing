@@ -18,33 +18,6 @@
                 "root": "pages",
                 "pattern": "*.hbs"
             } 
-        ],
-        "features": "sites-config/features.json",
-        "plugins": [
-            {
-                "pluginName": "updateEntity",
-                "sourceFiles": [
-                  {
-                    "root": "sites-plugins/updateEntity",
-                    "pattern": "**/*.ts"
-                  },
-                  {
-                    "root": "sites-plugins/updateEntity",
-                    "pattern": "**/*.json"
-                  }
-                ],
-                "event": "ON_URL_CHANGE"
-            },
-            {
-                "pluginName": "updateEntity2",
-                "sourceFiles": [
-                  {
-                    "root": "sites-plugins/updateEntity",
-                    "pattern": "**/*.js"
-                  }
-                ],
-                "event": "ON_URL_CHANGE"
-            }
         ]
     },
     "base_image_tag": "node-12.18",
