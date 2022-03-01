@@ -23,7 +23,7 @@
             ],
             "filter": {
                 "entityTypes": [
-                    "location"
+                    "healthcareProfessional"
                 ]
             },
             "localization": {
